@@ -26,11 +26,4 @@ function moveView(event)
 function start_ai()
 {
     const solution = search(s1, goalTest, actions, successor, false)
-    for(let i = 0; i < solution.length; i++)
-    {
-        setTimeout(()=>{new GameView(solution[i].state)}, i * 2000)
-        if(i === solution.length - 1)
-            s1 = solution[i].state
-    }
-}
-
+    for(let i = 0; i < solution.length; i++) }
